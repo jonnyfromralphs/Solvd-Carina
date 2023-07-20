@@ -1,0 +1,91 @@
+[2023-07-20 11:48:17] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-07-20 11:48:17] [1] [INFO] TEST [Solvd-Carina - testDeleteUsers] STARTED at [16:48:17 2023-07-20]
+[2023-07-20 11:48:17] [1] [INFO] Base properties loaded: api/users/user.properties
+[2023-07-20 11:48:18] [1] [INFO] Request method:	DELETE
+Request URI:	https://jsonplaceholder.typicode.com/users/1
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+[
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "username": "qurjemek",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "bebfbffj",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Leanne Graham",
+        "username": "qurjemek",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "bebfbffj",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
+    }
+]
+HTTP/1.1 200 OK
+Date: Thu, 20 Jul 2023 23:48:18 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 994
+X-Ratelimit-Reset: 1689896920
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vSuhndbHjUgmTRQaFwOV4mknp7Jq2woLhOdt%2FS2pqk%2ByCk%2F4TPuiMk1V5Rsm%2BBGXTjFXX19FPeg2bmCgDNsKO3qJ0SNuZ0hAVD8dk4k6oVx7JzNmHlmEmUVFXnG4inNJG9CPAh39VetXqx6Us4VG"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7e9f181bc8ef08f6-LAX
+alt-svc: h3=":443"; ma=86400
+
+{
+    
+}
+
+[2023-07-20 11:48:18] [1] [INFO] TEST [Solvd-Carina - testDeleteUsers] PASSED at [16:48:18 2023-07-20]
