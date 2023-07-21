@@ -1,0 +1,192 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "type:String",
+  "nextPageToken": "type:String",
+  "regionCode": "US",
+  "pageInfo": {
+    "totalResults": "type:Integer",
+    "resultsPerPage": "type:Integer"
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "type:String",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "type:String"
+      },
+      "snippet": {
+        "publishedAt": "type:String",
+        "channelId": "type:String",
+        "title": "type:String",
+        "description": "type:String",
+        "thumbnails": "type:JSONObject",
+        "channelTitle": "type:String",
+        "liveBroadcastContent": "type:String",
+        "publishTime": "type:String"
+      }
+    }
+  ]
+}
