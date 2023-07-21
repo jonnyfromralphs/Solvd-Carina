@@ -1,33 +1,15 @@
 package com.solvd.carina.demo;
 
-import com.google.gson.JsonArray;
 import com.solvd.carina.demo.api.*;
-import com.zebrunner.carina.api.APIMethodPoller;
-import com.zebrunner.carina.api.apitools.validation.JsonComparatorContext;
 import com.zebrunner.carina.api.apitools.validation.JsonCompareKeywords;
 import com.zebrunner.carina.core.IAbstractTest;
-import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
-import com.zebrunner.carina.core.registrar.tag.Priority;
-import com.zebrunner.carina.core.registrar.tag.TestPriority;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import kong.unirest.JsonNode;
-import ognl.ObjectElementsAccessor;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.skyscreamer.jsonassert.JSONCompareMode;
-import org.skyscreamer.jsonassert.JSONParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.InputStream;
 import java.lang.invoke.MethodHandles;
-import java.time.temporal.ChronoUnit;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class YouTubeAPITest implements IAbstractTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
