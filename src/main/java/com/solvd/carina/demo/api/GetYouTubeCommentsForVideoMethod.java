@@ -7,11 +7,14 @@ import com.zebrunner.carina.api.http.HttpMethodType;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.utils.config.Configuration;
 
-@Endpoint(url = "${base_url}/commentThreads?textFormat=plainText&part=snippet&maxResults=1", methodType = HttpMethodType.GET)
+@Endpoint(url = "${base_url}/commentThreads", methodType = HttpMethodType.GET)
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class GetYouTubeCommentsForVideoMethod extends AbstractApiMethodV2 {
     public GetYouTubeCommentsForVideoMethod(String videoId) {
         replaceUrlPlaceholder("base_url", Configuration.getRequired("api_url"));
+        addUrlParameter("textFormat", "plainText");
+        addUrlParameter("part", "snippet");
+        addUrlParameter("maxResults", "1");
         addUrlParameter("videoId", videoId);
         addUrlParameter("key", System.getenv("API_KEY"));
     }

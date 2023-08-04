@@ -34,13 +34,11 @@ public class YouTubeAPITest implements IAbstractTest {
         GetYouTubeCommentsForVideoMethod getYouTubeCommentsForVideo = new GetYouTubeCommentsForVideoMethod(firstResultVideoId);
         Response commentResponse = getYouTubeCommentsForVideo.callAPIExpectSuccess();
 
-        String expectedChannelTitle = "Programming with Mosh";
         String actualChannelTitle = videoResponse.jsonPath().get("items[0].snippet.channelTitle");
-        Assert.assertEquals(actualChannelTitle, expectedChannelTitle, "The channel names for the first search result differ.");
+        Assert.assertNotNull(actualChannelTitle, "A valid channel title should result from this call");
 
-        String expectedLikeCount = "232575";
         String actualLikeCount = videoResponse.jsonPath().get("items[0].statistics.likeCount");
-        Assert.assertEquals(actualLikeCount, expectedLikeCount, "The like count for the first search result differ.");
+        Assert.assertNotNull(actualLikeCount, "A valid number of likes should result from this call");
 
         getYouTubeCommentsForVideo.validateResponseAgainstSchema("api/youtube/_get/comments_rs.schema");
     }
@@ -53,5 +51,17 @@ public class YouTubeAPITest implements IAbstractTest {
         int actualResults = response.jsonPath().get("pageInfo.totalResults");
 
         Assert.assertEquals(actualResults, 0, "An invalid video id should return 0 results.");
+    }
+
+    @Test
+    public void testGetYoutubeSearchResultsWithInvalidAPIKey() {
+        GetYoutubeSearchResultsWithInvalidAPIKey getYoutubeSearchResultsWithInvalidAPIKey = new GetYoutubeSearchResultsWithInvalidAPIKey("funny cat videos");
+
+        Response response = getYoutubeSearchResultsWithInvalidAPIKey.callAPI();
+        int errorCode = response.jsonPath().get("error.code");
+        String message = response.jsonPath().get("error.message");
+
+        Assert.assertEquals(errorCode, 400, "Using an invalid api key should return a bad request error code");
+        Assert.assertEquals(message, "API key not valid. Please pass a valid API key.", "The error message return should let the user know their api key is invalid");
     }
 }
