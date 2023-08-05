@@ -1,6 +1,8 @@
 package com.solvd.carina.demo.gui.pages.desktop;
 
 
+import com.solvd.carina.demo.gui.components.CarinaHeader;
+import com.solvd.carina.demo.gui.components.CarinaNavBar;
 import com.zebrunner.carina.utils.factory.DeviceType;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
@@ -11,52 +13,33 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 public class CarinaDocsHomePage extends AbstractPage {
-    @FindBy(xpath = "//div[contains(@class, 'md-header-nav__title')]//span")
-    private ExtendedWebElement carinaHeader;
-    @FindBy(xpath = "//a[contains(@class, 'md-header-nav__button md-logo')]//img")
-    private ExtendedWebElement zebrunnerImage;
-    @FindBy(className = "md-search__form")
-    private ExtendedWebElement searchBar;
-    @FindBy(xpath = "//a[contains(@class, 'md-source')]")
-    private ExtendedWebElement githubLink;
+
     @FindBy(tagName = "header")
-    private ExtendedWebElement header;
+    private CarinaHeader carinaHeader;
+
     @FindBy(tagName = "footer")
     private ExtendedWebElement footer;
-    @FindBy(xpath = "//nav[contains(@class, 'md-nav--primary')]")
-    private ExtendedWebElement navBar;
+
+    @FindBy(xpath = "//nav[contains(@class, 'md-nav md-nav--primary')]")
+    private CarinaNavBar carinaNavBar;
 
     public CarinaDocsHomePage(WebDriver driver) {
         super(driver);
-        setUiLoadedMarker(zebrunnerImage);
+        setUiLoadedMarker(footer);
         setPageOpeningStrategy(PageOpeningStrategy.BY_ELEMENT);
     }
 
-    public ExtendedWebElement getZebrunnerImage() {
-        return zebrunnerImage;
-    }
-
-    public ExtendedWebElement getCarinaHeader() {
+    public CarinaHeader getCarinaHeader() {
         return carinaHeader;
     }
 
-    public ExtendedWebElement getSearchBar() {
-        return searchBar;
+    public boolean isHeaderSticky() {
+        footer.scrollTo();
+        return carinaHeader.getHeader().isVisible();
     }
 
-    public ExtendedWebElement getGithubLink() {
-        return githubLink;
+    public CarinaNavBar getCarinaNavBar() {
+        return carinaNavBar;
     }
 
-    public ExtendedWebElement getHeader() {
-        return header;
-    }
-
-    public ExtendedWebElement getFooter() {
-        return footer;
-    }
-
-    public ExtendedWebElement getNavBar() {
-        return navBar;
-    }
 }
