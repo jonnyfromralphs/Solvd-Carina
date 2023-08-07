@@ -133,15 +133,15 @@
 					</execution>
 				</executions>
 				<configuration>
-<!--					<artifactItems>-->
-<!--						<artifactItem>-->
-<!--							<groupId>com.zebrunner</groupId>-->
-<!--							<artifactId>agent-core</artifactId>-->
-<!--							<version>${zebrunner-agent.version}</version>-->
-<!--							<outputDirectory>${project.build.directory}/agent</outputDirectory>-->
-<!--							<destFileName>zebrunner-agent.jar</destFileName>-->
-<!--						</artifactItem>-->
-<!--					</artifactItems>-->
+					<artifactItems>
+						<artifactItem>
+							<groupId>com.zebrunner</groupId>
+							<artifactId>agent-core</artifactId>
+							<version>${zebrunner-agent.version}</version>
+							<outputDirectory>${project.build.directory}/agent</outputDirectory>
+							<destFileName>zebrunner-agent.jar</destFileName>
+						</artifactItem>
+					</artifactItems>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -149,7 +149,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.1.0</version>
 				<configuration>
-<!--					<argLine>-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>-->
+					<argLine>-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>
 					<useSystemClassLoader>false</useSystemClassLoader>
 					<suiteXmlFiles>
 						<suiteXmlFile>${project.build.directory}/test-classes/testng_suites/${suite}.xml</suiteXmlFile>

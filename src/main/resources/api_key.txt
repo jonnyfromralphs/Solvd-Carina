@@ -1,0 +1,1 @@
+//To run these tests locally, you must set your api key as an environment variable. Click on your class and on "Edit Configurations". Under environment variables, set API_KEY={your api key}

@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "type": "string"
+    },
+    "etag": {
+      "type": "string"
+    },
+    "nextPageToken": {
+      "type": "string"
+    },
+    "pageInfo": {
+      "type": "object",
+      "properties": {
+        "totalResults": {
+          "type": "integer"
+        },
+        "resultsPerPage": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "totalResults",
+        "resultsPerPage"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string"
+            },
+            "etag": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "snippet": {
+              "type": "object",
+              "properties": {
+                "videoId": {
+                  "type": "string"
+                },
+                "topLevelComment": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string"
+                    },
+                    "etag": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "snippet": {
+                      "type": "object",
+                      "properties": {
+                        "videoId": {
+                          "type": "string"
+                        },
+                        "textDisplay": {
+                          "type": "string"
+                        },
+                        "textOriginal": {
+                          "type": "string"
+                        },
+                        "authorDisplayName": {
+                          "type": "string"
+                        },
+                        "authorProfileImageUrl": {
+                          "type": "string"
+                        },
+                        "authorChannelUrl": {
+                          "type": "string"
+                        },
+                        "authorChannelId": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "value"
+                          ]
+                        },
+                        "canRate": {
+                          "type": "boolean"
+                        },
+                        "viewerRating": {
+                          "type": "string"
+                        },
+                        "likeCount": {
+                          "type": "integer"
+                        },
+                        "publishedAt": {
+                          "type": "string"
+                        },
+                        "updatedAt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "videoId",
+                        "textDisplay",
+                        "textOriginal",
+                        "authorDisplayName",
+                        "authorProfileImageUrl",
+                        "authorChannelUrl",
+                        "authorChannelId",
+                        "canRate",
+                        "viewerRating",
+                        "likeCount",
+                        "publishedAt",
+                        "updatedAt"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "etag",
+                    "id",
+                    "snippet"
+                  ]
+                },
+                "canReply": {
+                  "type": "boolean"
+                },
+                "totalReplyCount": {
+                  "type": "integer"
+                },
+                "isPublic": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "videoId",
+                "topLevelComment",
+                "canReply",
+                "totalReplyCount",
+                "isPublic"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "etag",
+            "id",
+            "snippet"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "kind",
+    "etag",
+    "nextPageToken",
+    "pageInfo",
+    "items"
+  ]
+}
